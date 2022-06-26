@@ -1,0 +1,29 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__item {
+    --card-item: 6;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: #2196f3;
+      fill: #2196f3;
+    }
+  }
+}

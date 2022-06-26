@@ -1,0 +1,78 @@
+.btn-primary {
+  color: var(--background-heder);
+  background-color: var(--accent-color);
+
+  border-radius: 4px;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--background-hover-button-ptimary);
+    border-radius: 4px;
+    border: 0;
+    height: 50px;
+    padding: 10px 32px;
+  }
+}
+
+.button__secondary {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+
+  border-radius: 4px;
+  border: 0;
+  height: 40px;
+  padding: 6px 22px;
+  transition-property: box-shadow, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--background-heder);
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &--ident + &--ident {
+    margin-left: 8px;
+  }
+}
+
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &.current {
+    display: flex;
+    color: var(--accent-color);
+  }
+}
+
+.button__list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.button__item--ident {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
