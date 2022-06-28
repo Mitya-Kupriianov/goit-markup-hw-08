@@ -1,17 +1,34 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__item {
-    --card-item: 6;
+    --card-item: 2;
+    @include tabl {
+      --card-item: 3;
+    }
+    @include tabl {
+      --card-item: 6;
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // max-width: 210px;
     height: 92px;
+
+    @include tabl {
+      width: 226px;
+    }
+    @include desk {
+      width: 170px;
+    }
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: #afb1b8;

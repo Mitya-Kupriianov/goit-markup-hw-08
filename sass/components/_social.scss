@@ -26,3 +26,16 @@
     background-color: #188ce8;
   }
 }
+.social-tooter {
+  @include desk {
+    margin-bottom: 0;
+    margin-left: 70px;
+
+    // margin-left: 165px;
+  }
+}
+
+.social-tooter__link {
+  fill: var(--background-heder);
+  background: rgba(255, 255, 255, 0.1);
+}

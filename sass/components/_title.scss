@@ -1,29 +1,14 @@
-.hero-title {
-  color: var(--background-heder);
-  max-width: 696px;
-  text-align: center;
-
-  font-style: 400;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  &--ident {
-    margin: 0 auto 30px;
-  }
-}
-
 .section-title {
   color: var(--title-text-color);
-
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.7;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
 
+  @include desk {
+    font-size: 36px;
+    line-height: 1.17;
+  }
   &--ident {
     margin-bottom: 50px;
   }
@@ -59,8 +44,11 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
-
+  @include tabl {
+    text-align: justify;
+  }
   &--ident {
     margin-bottom: 10px;
   }
@@ -76,5 +64,9 @@
 
   &--ident {
     margin-bottom: 20px;
+    text-align: center;
+    @include desk {
+      text-align: justify;
+    }
   }
 }

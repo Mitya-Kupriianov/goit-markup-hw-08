@@ -15,7 +15,7 @@
     position: relative;
     overflow: hidden;
 
-    &_text {
+    &__text {
       padding: 63px 24px;
       font-weight: 400;
       font-size: 18px;
@@ -24,7 +24,7 @@
       color: #ffffff;
     }
 
-    &_box {
+    &__box {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -47,6 +47,12 @@
 }
 
 .work-cards__item {
+  @include tabl {
+    --card-item: 2;
+  }
+  @include desk {
+    --card-item: 3;
+  }
   background: var(--background-heder);
 }
 

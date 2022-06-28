@@ -1,22 +1,22 @@
 @import "./utils/reset";
-@import "./utils/card-set";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/card-set";
+
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/social";
+@import "./components/title";
+@import "./components/modal";
+@import "./components/form";
 
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/peculiarities";
 @import "./layout/work";
-@import "./layout/work";
 @import "./layout/team";
 @import "./layout/client";
 @import "./layout/footer";
 @import "./layout/work-cards";
-@import "./layout/modal";
-@import "./layout/form";
 
-@import "./components/btn";
-@import "./components/logo";
-@import "./components/social";
-
-@import "./base/container";
-@import "./base/title";
+@import "./base/basic";

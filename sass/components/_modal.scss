@@ -27,12 +27,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  max-width: 450px;
+  // height: 609px;
 
-  width: 528px;
-  height: 581px;
+  @include desk {
+    max-width: 528px;
+    // height: 581px;
+  }
   padding: 40px;
   background-color: #fff;
   border-radius: 4px;
+  overflow: auto;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,7 +46,11 @@
   &__text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    @include desk {
+      line-height: 1.15;
+    }
+
     text-align: center;
     color: #212121;
 

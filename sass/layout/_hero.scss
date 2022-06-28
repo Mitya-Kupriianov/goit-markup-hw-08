@@ -1,7 +1,11 @@
 .hero {
   margin: 0 auto;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
+
+  @include desk {
+    padding: 200px 0;
+  }
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -11,4 +15,26 @@
   background-position: center;
   background-size: 1600px 600px;
   background-repeat: no-repeat;
+}
+.hero-title {
+  color: var(--background-heder);
+  max-width: 360px;
+  text-align: center;
+  font-style: 400;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @include desk {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+
+  &--ident {
+    margin: 0 auto 30px;
+  }
 }

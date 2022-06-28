@@ -5,8 +5,18 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding: 0 15px;
+  @include mob {
+    width: 480px;
+  }
+  width: 100%;
+  @include tabl {
+    width: 780px;
+  }
+
+  @include desk {
+    width: 1200px;
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -23,6 +33,11 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

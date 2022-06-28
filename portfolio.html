@@ -19,10 +19,89 @@
   <body>
     <header class="header">
       <div class="container container-header">
+        <!-- <div class="mob">
+          
+        </div> -->
         <nav class="nav">
-          <a class="logo header-logo--indent" href="./index.html"
+          <a class="logo header__logo header-logo--indent" href="./index.html"
             ><span class="logo__text">Web</span>Studio</a
           >
+          <button type="button" class="mob__btn" data-menu-open>
+            <svg
+              width="40px"
+              height="40px"
+              aria-labelledby="Переключатель мобильного меню"
+            >
+              <use class="icon__menu" href="./images/icons.svg#menu_40px"></use>
+            </svg>
+          </button>
+          <div class="menu-container is-hidden" data-menu>
+            <div class="menu-box">
+              <div class="menu-page--up">
+                <ul class="menu-page">
+                  <li class="menu__item">
+                    <a href="./index.html" class="link menu__link">Студия</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="./portfolio.html" class="current link menu__link"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="link menu__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu-page--down">
+                <ul class="menu-contacts">
+                  <li class="menu-contacts__item">
+                    <a href="" class="link menu-contacts__link"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="menu-contacts__item">
+                    <a href="" class="link menu-contacts__link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="menu-social">
+                  <li class="menu-social__item">
+                    <a href="" class="link menu-social__link menu-social--line"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="menu-social__item">
+                    <a href="" class="link menu-social__link menu-social--line"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="menu-social__item">
+                    <a href="" class="link menu-social__link menu-social--line"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="menu-social__item">
+                    <a href="" class="link menu-social__link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="menu--close" data-menu-close>
+              <svg
+                width="40px"
+                height="40px"
+                aria-labelledby="Переключатель закрыто"
+              >
+                <use
+                  class="icon__close"
+                  href="./images/icons.svg#close_40px"
+                ></use>
+              </svg>
+            </button>
+          </div>
           <ul class="nav__page">
             <li class="nav__item">
               <a href="./index.html" class="link nav-link nav-link__accent"
@@ -47,7 +126,7 @@
               href="mailto:info@devstudio.com"
               class="link nav-link contacts__link contacts__link--indent"
             >
-              <svg class="contacts__icon" width="16px" height="12px">
+              <svg class="contacts__icon icon__mail">
                 <use href=".//images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
@@ -58,7 +137,7 @@
               href="tel:+380961111111"
               class="link nav-link contacts__link contacts__link--indent"
             >
-              <svg class="contacts__icon" width="10px" height="16px">
+              <svg class="contacts__icon icon__tel">
                 <use href=".//images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -74,7 +153,7 @@
       <section class="portfolio">
         <div class="container">
           <h2 class="visually-hidden">Виды услуг</h2>
-          <ul class="button__list">
+          <ul class="card-set button__list">
             <li class="button__item--ident">
               <button type="button" class="button button__secondary">
                 Все
@@ -321,10 +400,10 @@
     </main>
     <footer class="footer">
       <div class="container container-footer">
-        <div>
+        <div class="address-box">
           <a href="./index.html" class="logo footer-logo--indent">
-            <span class="logo__text">Web</span>
-            <span class="logo--accent">Studio</span>
+            <span class="logo__text">Web</span
+            ><span class="logo--accent">Studio</span>
           </a>
           <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -346,28 +425,28 @@
           <h3 class="footer-title footer-title--ident">присоединяйтесь</h3>
           <ul class="social__list">
             <li class="social__item">
-              <a href="" class="social__link social-footer-link">
+              <a href="" class="social__link social-tooter__link">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#instagram-foot"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social-footer-link">
+              <a href="" class="social__link social-tooter__link">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social-footer-link">
+              <a href="" class="social__link social-tooter__link">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social-footer-link">
+              <a href="" class="social__link social-tooter__link">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>

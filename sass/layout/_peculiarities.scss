@@ -1,18 +1,36 @@
 .peculiarities {
-  padding-top: 94px;
+  padding-top: 60px;
 
+  @include desk {
+    padding-top: 94px;
+  }
   &__item {
-    --card-item: 4;
+    --card-item: 1;
+    @include tabl {
+      --card-item: 2;
+    }
+
+    @include desk {
+      --card-item: 4;
+    }
   }
 
   &__img {
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include tabl {
+      width: 354px;
+    }
+
+    @include desk {
+      width: 270px;
+    }
   }
 
   &__img--indent {

@@ -1,5 +1,5 @@
 .logo {
-  display: inline-block;
+  display: block;
 
   color: var(--title-text-color);
   text-decoration: none;
@@ -7,9 +7,13 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  @include tabl {
+    font-size: 26px;
+  }
 
   &__text {
     color: var(--accent-color);
@@ -19,11 +23,25 @@
   }
 }
 
+.header__logo {
+  @media screen and (max-width: 767px) {
+    padding: 15px 16px;
+  }
+}
+
 .header-logo--indent {
-  margin-right: 94px;
+  @include tabl {
+    margin-right: 88px;
+  }
+  @include desk {
+    margin-right: 93px;
+  }
 }
 
 .footer-logo--indent {
+  // @media screen and(max-width: 767px) {
+  //   text-align: center;
+  // }
   margin-bottom: 20px;
   margin-right: 0;
 }
