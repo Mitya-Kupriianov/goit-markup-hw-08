@@ -56,7 +56,11 @@
     color: #212121;
 
     &--ident {
-      margin-bottom: 12px;
+      @media screen and (min-height: 600px) {
+        margin-bottom: 12px;
+      }
+      // height: ;
+      // margin-bottom: 12px;
     }
   }
 

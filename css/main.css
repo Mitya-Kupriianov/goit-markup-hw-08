@@ -337,8 +337,10 @@ img {
     line-height: 1.15;
   }
 }
-.modal__text--ident {
-  margin-bottom: 12px;
+@media screen and (min-height: 600px) {
+  .modal__text--ident {
+    margin-bottom: 12px;
+  }
 }
 .modal-btn {
   position: absolute;
@@ -375,7 +377,12 @@ img {
   text-align: center;
 }
 .form-btn--ident {
-  margin-top: 30px;
+  margin-top: 10px;
+}
+@media screen and (min-height: 600px) {
+  .form-btn--ident {
+    margin-top: 30px;
+  }
 }
 
 .form__comit {
@@ -413,7 +420,12 @@ img {
   }
 }
 .form__checkbox--ident {
-  margin-top: 20px;
+  margin-top: 7px;
+}
+@media screen and (min-height: 600px) {
+  .form__checkbox--ident {
+    margin-top: 20px;
+  }
 }
 
 .form__lable {
