@@ -578,13 +578,18 @@ textarea {
 
 .menu-contacts__item:first-child .menu-contacts__link {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 32px;
 }
 @media screen and (min-width: 340px) {
+  .menu-contacts__item:first-child .menu-contacts__link {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 380px) {
   .menu-contacts__item:first-child .menu-contacts__link {
     font-size: 34px;
   }
@@ -609,10 +614,25 @@ textarea {
 
 .menu-social__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 377px) {
+  .menu-social__link {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 410px) {
+  .menu-social__link {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .menu-social__link {
+    font-size: 18px;
+  }
 }
 
 .menu-social--line::after {
@@ -1153,10 +1173,15 @@ textarea {
 .work-cards__link .overlay__text {
   padding: 63px 24px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 370px) {
+  .work-cards__link .overlay__text {
+    font-size: 18px;
+  }
 }
 .work-cards__link .overlay__box {
   position: absolute;
@@ -1175,6 +1200,7 @@ textarea {
 }
 
 .work-cards__item {
+  --card-item: 1;
   background: var(--background-heder);
 }
 @media screen and (min-width: 768px) {

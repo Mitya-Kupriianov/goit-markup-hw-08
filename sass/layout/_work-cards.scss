@@ -18,7 +18,10 @@
     &__text {
       padding: 63px 24px;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 14px;
+      @media screen and (min-width: 370px) {
+        font-size: 18px;
+      }
       line-height: 1.55;
       letter-spacing: 0.03em;
       color: #ffffff;
@@ -47,6 +50,8 @@
 }
 
 .work-cards__item {
+  --card-item: 1;
+
   @include tabl {
     --card-item: 2;
   }
