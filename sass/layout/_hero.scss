@@ -3,19 +3,65 @@
   text-align: center;
   padding: 118px 0;
 
-  @include desk {
-    padding: 200px 0;
-  }
+  // @include desk {
+  //   padding: 200px 0;
+  // }
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-bg.jpeg);
+    url(./images/img-squoosh/hero-mob-1.jpeg);
   background-position: center;
-  background-size: 1600px 600px;
+  background-size: cover;
+  // background-size: 100%;
   background-repeat: no-repeat;
+
+  @include retina {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img-squoosh/hero-mob-2x.jpeg);
+  }
+  @include tabl {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(./images/img-squoosh/hero-tabl-1x.jpeg);
+
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(./images/img-squoosh/hero-tabl-2x.jpeg);
+    }
+  }
+
+  @include desk {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(./images/img-squoosh/hero-desk-1x.jpeg);
+
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(./images/img-squoosh/hero-desk-2x.jpeg);
+    }
+  }
 }
+
 .hero-title {
   color: var(--background-heder);
   max-width: 360px;

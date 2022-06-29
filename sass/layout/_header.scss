@@ -73,6 +73,9 @@
   }
 }
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   // display: none;
   position: fixed;
   top: 0;
@@ -105,10 +108,6 @@
   // position: relative;
 }
 .menu-page--down {
-  position: absolute;
-  // top: 562px;
-  bottom: 48px;
-  left: 40px;
 }
 // .menu-box {
 //   display: flex;

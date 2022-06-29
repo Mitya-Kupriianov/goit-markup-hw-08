@@ -36,60 +36,58 @@
             </svg>
           </button>
           <div class="menu-container is-hidden" data-menu>
-            <div class="menu-box">
-              <div class="menu-page--up">
-                <ul class="menu-page">
-                  <li class="menu__item">
-                    <a href="./index.html" class="current link menu__link"
-                      >Студия</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="./portfolio.html" class="link menu__link"
-                      >Портфолио</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="" class="link menu__link">Контакты</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="menu-page--up">
+              <ul class="menu-page">
+                <li class="menu__item">
+                  <a href="./index.html" class="current link menu__link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="./portfolio.html" class="link menu__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="" class="link menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
 
-              <div class="menu-page--down">
-                <ul class="menu-contacts">
-                  <li class="menu-contacts__item">
-                    <a href="" class="link menu-contacts__link"
-                      >+38 096 111 11 11</a
-                    >
-                  </li>
-                  <li class="menu-contacts__item">
-                    <a href="" class="link menu-contacts__link"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                </ul>
+            <div class="menu-page--down">
+              <ul class="menu-contacts">
+                <li class="menu-contacts__item">
+                  <a href="" class="link menu-contacts__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-contacts__item">
+                  <a href="" class="link menu-contacts__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
 
-                <ul class="card-set menu-social">
-                  <li class="card-set-item menu-social__item">
-                    <a href="" class="link menu-social__link menu-social--line"
-                      >Instagram</a
-                    >
-                  </li>
-                  <li class="card-set-item menu-social__item">
-                    <a href="" class="link menu-social__link menu-social--line"
-                      >Twitter</a
-                    >
-                  </li>
-                  <li class="card-set-item menu-social__item">
-                    <a href="" class="link menu-social__link menu-social--line"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li class="card-set-item menu-social__item">
-                    <a href="" class="link menu-social__link">LinkedIn</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="card-set menu-social">
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link menu-social--line"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link menu-social--line"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link menu-social--line"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link">LinkedIn</a>
+                </li>
+              </ul>
             </div>
             <button type="button" class="menu--close" data-menu-close>
               <svg
@@ -237,11 +235,36 @@
           <ul class="card-set work__list">
             <li class="card-set-item work__item">
               <div class="work__img">
-                <img
-                  src="./images/img1.jpeg"
-                  alt="Рабочий процесс"
-                  width="370"
-                />
+                <picture>
+                  <!-- <source
+                    srcset="
+                      ./images/img-tab.jpeg    1x,
+                      ./images/img-tab-2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:768px)"
+                  /> -->
+                  <source
+                    srcset="
+                      ./images/img-squoosh/work-desk-1-1x.webp 1x,
+                      ./images/img-squoosh/work-desk-1-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-squoosh/work-desk-1-1x.jpeg 1x,
+                      ./images/img-squoosh/work-desk-1-2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/img-squoosh/work-desk-1-1x.jpeg"
+                    alt="Рабочий процесс"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="work__text--position">
                   <p class="work__text">Десктопные приложения</p>
                 </div>
@@ -249,11 +272,27 @@
             </li>
             <li class="card-set-item work__item">
               <div class="work__img">
-                <img
-                  src="./images/img2.jpeg"
-                  alt="Рабочий процесс"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-squoosh/work-desk-2-1x.webp 1x,
+                      ./images/img-squoosh/work-desk-2-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-squoosh/work-desk-2-1x.jpeg 1x,
+                      ./images/img-squoosh/work-desk-2-2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/img-squoosh/work-desk-2-1x.jpeg"
+                    alt="Рабочий процесс"
+                    width="370"
+                  />
+                </picture>
                 <div class="work__text--position">
                   <p class="work__text">Мобильные приложения</p>
                 </div>
@@ -261,11 +300,28 @@
             </li>
             <li class="card-set-item work__item">
               <div class="work__img">
-                <img
-                  src="./images/img3.jpeg"
-                  alt="Рабочий процесс"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-squoosh/work-desk-3-1x.webp 1x,
+                      ./images/img-squoosh/work-desk-3-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-squoosh/work-desk-3-1x.jpeg 1x,
+                      ./images/img-squoosh/work-desk-3-2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/img-squoosh/work-desk-3-1x.jpeg"
+                    alt="Рабочий процесс"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="work__text--position">
                   <p class="work__text">Дизайнерские решения</p>
                 </div>
