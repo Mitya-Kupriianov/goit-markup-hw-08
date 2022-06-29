@@ -42,6 +42,7 @@ img {
   --background-heder: #fff;
   --background-main: #e5e5e5;
   --background-footer: #2f303a;
+  --logo-family: Ralewey, sans-serif;
   --card-gap: 30px;
   --card-item: 3;
 }
@@ -128,7 +129,7 @@ img {
   display: block;
   color: var(--title-text-color);
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: var(--logo-family);
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -554,6 +555,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 99;
   padding: 48px 40px;
   background-color: var(--background-heder);
   opacity: 1;
