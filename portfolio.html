@@ -19,82 +19,69 @@
   <body>
     <header class="header">
       <div class="container container-header">
-        <!-- <div class="mob">
-          
-        </div> -->
         <nav class="nav">
           <a class="logo header__logo header-logo--indent" href="./index.html"
             ><span class="logo__text">Web</span>Studio</a
           >
           <button type="button" class="mob__btn" data-menu-open>
-            <svg
-              width="40px"
-              height="40px"
-              aria-labelledby="Переключатель мобильного меню"
-            >
+            <svg width="40px" height="40px">
               <use class="icon__menu" href="./images/icons.svg#menu_40px"></use>
             </svg>
           </button>
           <div class="menu-container is-hidden" data-menu>
-            <div class="menu-box">
-              <div class="menu-page--up">
-                <ul class="menu-page">
-                  <li class="menu__item">
-                    <a href="./index.html" class="link menu__link">Студия</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="./portfolio.html" class="current link menu__link"
-                      >Портфолио</a
-                    >
-                  </li>
-                  <li class="menu__item">
-                    <a href="5" class="link menu__link">Контакты</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="menu-page--up">
+              <ul class="menu-page">
+                <li class="menu__item">
+                  <a href="./index.html" class="link menu__link">Студия</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./portfolio.html" class="current link menu__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="" class="link menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
 
-              <div class="menu-page--down">
-                <ul class="menu-contacts">
-                  <li class="menu-contacts__item">
-                    <a href="" class="link menu-contacts__link"
-                      >+38 096 111 11 11</a
-                    >
-                  </li>
-                  <li class="menu-contacts__item">
-                    <a href="" class="link menu-contacts__link"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                </ul>
+            <div class="menu-page--down">
+              <ul class="menu-contacts">
+                <li class="menu-contacts__item">
+                  <a href="" class="link menu-contacts__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-contacts__item">
+                  <a href="" class="link menu-contacts__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
 
-                <ul class="menu-social">
-                  <li class="menu-social__item">
-                    <a href="" class="link menu-social__link menu-social--line"
-                      >Instagram</a
-                    >
-                  </li>
-                  <li class="menu-social__item">
-                    <a href="" class="link menu-social__link menu-social--line"
-                      >Twitter</a
-                    >
-                  </li>
-                  <li class="menu-social__item">
-                    <a href="" class="link menu-social__link menu-social--line"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li class="menu-social__item">
-                    <a href="" class="link menu-social__link">LinkedIn</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="card-set menu-social">
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link menu-social--line"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link menu-social--line"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link menu-social--line"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="card-set-item menu-social__item">
+                  <a href="" class="link menu-social__link">LinkedIn</a>
+                </li>
+              </ul>
             </div>
             <button type="button" class="menu--close" data-menu-close>
-              <svg
-                width="40px"
-                height="40px"
-                aria-labelledby="Переключатель закрыто"
-              >
+              <svg width="40px" height="40px">
                 <use
                   class="icon__close"
                   href="./images/icons.svg#close_40px"
@@ -187,7 +174,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img src="./images/web1.jpeg" alt="Ноутбук" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-1-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-1-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-1-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-1-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-1-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-1-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-1-1x.jpeg"
+                      alt="Ноутбук"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -208,11 +224,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img
-                    src="./images/design1.jpeg"
-                    alt="Два человека играют в баскетбол"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-2-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-2-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-2-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-2-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-2-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-2-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-2-1x.jpeg"
+                      alt="Два человека играют в баскетбол"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -233,11 +274,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img
-                    src="./images/app1.jpeg"
-                    alt="Логотип компании"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-3-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-3-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-3-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-3-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-3-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-3-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-3-1x.jpeg"
+                      alt="Логотип компании"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -258,11 +324,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img
-                    src="./images/marketing1.jpeg"
-                    alt="Наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-4-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-4-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-4-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-4-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-4-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-4-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-4-1x.jpeg"
+                      alt="Наушники"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -284,7 +375,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img src="./images/app2.jpeg" alt="Две коробки" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-5-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-5-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-5-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-5-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-5-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-5-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-5-1x.jpeg"
+                      alt="Две коробки"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -305,7 +425,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img src="./images/web2.jpeg" alt="Монитор" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-6-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-6-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-6-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-6-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-6-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-6-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-6-1x.jpeg"
+                      alt="Монитор"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -326,11 +475,37 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img
-                    src="./images/design2.jpeg"
-                    alt="Развёрнутая книга"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-7-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-7-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-7-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-7-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-7-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-7-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-7-1x.jpeg"
+                      alt="Развёрнутая книга"
+                    />
+                  </picture>
+                  <img src="./images/design2.jpeg" alt="" width="370" />
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -351,7 +526,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img src="./images/marketing2.jpeg" alt="Бирка" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-8-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-8-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-8-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-8-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-8-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-8-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-8-1x.jpeg"
+                      alt="Бирка"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -372,11 +576,36 @@
             <li class="card-set-item work-cards__item">
               <a href="" class="work-cards__link">
                 <div class="overlay">
-                  <img
-                    src="./images/app3.jpeg"
-                    alt="Человек работает за ноутбуком"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-desk-9-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-desk-9-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-tabl-9-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-tabl-9-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-squoosh/work-card-mob-9-1x.jpeg 1x,
+                        ./images/img-squoosh/work-card-mob-9-2x.jpeg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/img-squoosh/work-card-mob-9-1x.jpeg"
+                      alt="Человек работает за ноутбуком"
+                    />
+                  </picture>
                   <div class="overlay__box">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем

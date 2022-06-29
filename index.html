@@ -19,19 +19,12 @@
   <body>
     <header class="header">
       <div class="container container-header">
-        <!-- <div class="mob">
-          
-        </div> -->
         <nav class="nav">
           <a class="logo header__logo header-logo--indent" href="./index.html"
             ><span class="logo__text">Web</span>Studio</a
           >
           <button type="button" class="mob__btn" data-menu-open>
-            <svg
-              width="40px"
-              height="40px"
-              aria-labelledby="Переключатель мобильного меню"
-            >
+            <svg width="40px" height="40px">
               <use class="icon__menu" href="./images/icons.svg#menu_40px"></use>
             </svg>
           </button>
@@ -90,11 +83,7 @@
               </ul>
             </div>
             <button type="button" class="menu--close" data-menu-close>
-              <svg
-                width="40px"
-                height="40px"
-                aria-labelledby="Переключатель закрыто"
-              >
+              <svg width="40px" height="40px">
                 <use
                   class="icon__close"
                   href="./images/icons.svg#close_40px"
@@ -338,12 +327,37 @@
           <h2 class="section-title section-title--ident">Наша команда</h2>
           <ul class="card-set team-list">
             <li class="card-set-item team__item">
-              <img
-                class="team__img"
-                src="./images/igor.jpeg"
-                alt="Фото члена команды"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-desk-1-1x.jpeg 1x,
+                    ./images/img-squoosh/team-desk-1-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-tabl-1-1x.jpeg 1x,
+                    ./images/img-squoosh/team-tabl-1-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-mob-1-1x.jpeg 1x,
+                    ./images/img-squoosh/team-mob-1-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/img-squoosh/team-mob-1-1x.jpeg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team-title team-title--ident">Игорь Демьяненко</h3>
                 <p class="team__text--ident">Product Designer</p>
@@ -380,12 +394,37 @@
               </div>
             </li>
             <li class="card-set-item team__item">
-              <img
-                class="team__img"
-                src="./images/olya.jpeg"
-                alt="Фото члена команды"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-desk-2-1x.jpeg 1x,
+                    ./images/img-squoosh/team-desk-2-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-tabl-2-1x.jpeg 1x,
+                    ./images/img-squoosh/team-tabl-2-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-mob-2-1x.jpeg 1x,
+                    ./images/img-squoosh/team-mob-2-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/img-squoosh/team-mob-2-1x.jpeg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team-title team-title--ident">Ольга Репина</h3>
                 <p class="team__text--ident">Frontend Developer</p>
@@ -422,12 +461,37 @@
               </div>
             </li>
             <li class="card-set-item team__item">
-              <img
-                class="team__img"
-                src="./images/nikolya.jpeg"
-                alt="Фото члена команды"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-desk-3-1x.jpeg 1x,
+                    ./images/img-squoosh/team-desk-3-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-tabl-3-1x.jpeg 1x,
+                    ./images/img-squoosh/team-tabl-3-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-mob-3-1x.jpeg 1x,
+                    ./images/img-squoosh/team-mob-3-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/img-squoosh/team-mob-3-1x.jpeg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team-title team-title--ident">Николай Тарасов</h3>
                 <p class="team__text--ident">Marketing</p>
@@ -464,12 +528,37 @@
               </div>
             </li>
             <li class="card-set-item team__item">
-              <img
-                class="team__img"
-                src="./images/mihail.jpeg"
-                alt="Фото члена команды"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-desk-4-1x.jpeg 1x,
+                    ./images/img-squoosh/team-desk-4-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-tabl-4-1x.jpeg 1x,
+                    ./images/img-squoosh/team-tabl-4-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-squoosh/team-mob-4-1x.jpeg 1x,
+                    ./images/img-squoosh/team-mob-4-2x.jpeg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/img-squoosh/team-mob-4-1x.jpeg"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team-title team-title--ident">Михаил Ермаков</h3>
                 <p class="team__text--ident">UI Designer</p>

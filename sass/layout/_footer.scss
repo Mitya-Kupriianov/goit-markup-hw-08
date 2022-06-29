@@ -65,6 +65,14 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
 
+  @include tabl {
+    text-align: center;
+  }
+
+  @include desk {
+    text-align: justify;
+  }
+
   &__link {
     color: rgba(255, 255, 255, 0.6);
   }
