@@ -580,19 +580,33 @@ textarea {
 
 .menu-contacts__item:first-child .menu-contacts__link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 32px;
 }
+@media screen and (min-width: 340px) {
+  .menu-contacts__item:first-child .menu-contacts__link {
+    font-size: 34px;
+  }
+}
 
 .menu-contacts__item:last-child .menu-contacts__link {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.166;
   letter-spacing: 0.02em;
   margin-bottom: 64px;
+}
+@media screen and (min-width: 340px) {
+  .menu-contacts__item:last-child .menu-contacts__link {
+    font-size: 24px;
+  }
+}
+
+.menu-social__item {
+  --card-item: 5;
 }
 
 .menu-social__link {
@@ -607,7 +621,6 @@ textarea {
   content: "";
   height: 22px;
   margin-left: 10px;
-  margin-right: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
@@ -618,16 +631,19 @@ textarea {
 
 .menu__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
 }
+@media screen and (min-width: 340px) {
+  .menu__link {
+    font-size: 40px;
+  }
+}
 
 .menu-social {
-  display: flex;
-  lex-direction: row;
-  flex-wrap: wrap;
+  --card-gap: 10px;
 }
 
 .nav {
