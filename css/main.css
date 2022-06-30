@@ -169,6 +169,12 @@ img {
 .footer-logo--indent {
   margin-bottom: 20px;
   margin-right: 0;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo--indent {
+    text-align: justify;
+  }
 }
 
 .social__list {
@@ -243,6 +249,11 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-cards__title {
+    max-width: 306px;
+  }
+}
 .work-cards__title--ident {
   margin-top: 0;
   margin-bottom: 4px;
@@ -312,7 +323,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
   max-width: 450px;
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
   background-color: #fff;
   border-radius: 4px;
   overflow: auto;
@@ -323,6 +334,11 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
+  }
+}
+@media screen and (min-height: 600px) {
+  .modal {
+    padding-bottom: 40px;
   }
 }
 .modal__text {
@@ -377,7 +393,7 @@ img {
   text-align: center;
 }
 .form-btn--ident {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 @media screen and (min-height: 600px) {
   .form-btn--ident {
@@ -420,7 +436,7 @@ img {
   }
 }
 .form__checkbox--ident {
-  margin-top: 7px;
+  margin-top: 15px;
 }
 @media screen and (min-height: 600px) {
   .form__checkbox--ident {
@@ -840,12 +856,12 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-squoosh/hero-desk-1x.jpeg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-squoosh/hero-desk-1-1x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-squoosh/hero-desk-2x.jpeg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-squoosh/hero-desk-1-2x.jpeg);
   }
 }
 
@@ -874,10 +890,12 @@ textarea {
 
 .peculiarities {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .peculiarities {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .peculiarities__item {
@@ -983,6 +1001,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .team__item {
     --card-item: 2;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1187,6 +1206,9 @@ textarea {
 }
 
 .work-cards__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -1200,12 +1222,17 @@ textarea {
   overflow: hidden;
 }
 .work-cards__link .overlay__text {
-  padding: 63px 24px;
+  padding: 30px 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .work-cards__link .overlay__text {
+    padding: 63px 24px;
+  }
 }
 @media screen and (min-width: 370px) {
   .work-cards__link .overlay__text {
@@ -1235,6 +1262,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .work-cards__item {
     --card-item: 2;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1244,6 +1272,7 @@ textarea {
 }
 
 .work-cards__box {
+  flex-grow: 1;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 24px 20px;

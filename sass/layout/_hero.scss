@@ -53,7 +53,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/img-squoosh/hero-desk-1x.jpeg);
+      url(../images/img-squoosh/hero-desk-1-1x.jpeg);
 
     @include retina {
       background-image: linear-gradient(
@@ -61,7 +61,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/img-squoosh/hero-desk-2x.jpeg);
+        url(../images/img-squoosh/hero-desk-1-2x.jpeg);
     }
   }
 }

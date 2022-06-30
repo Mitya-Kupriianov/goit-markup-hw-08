@@ -39,9 +39,14 @@
 }
 
 .footer-logo--indent {
+  margin-bottom: 20px;
+  margin-right: 0;
+  text-align: center;
   // @media screen and(max-width: 767px) {
   //   text-align: center;
   // }
-  margin-bottom: 20px;
-  margin-right: 0;
+
+  @include desk {
+    text-align: justify;
+  }
 }

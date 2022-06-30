@@ -1,4 +1,7 @@
 .work-cards__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
 
   transition-property: box-shadow;
@@ -16,7 +19,16 @@
     overflow: hidden;
 
     &__text {
-      padding: 63px 24px;
+      padding: 30px 24px;
+      @include mob {
+        padding: 63px 24px;
+      }
+      // @include tabl {
+      //   padding: 53px 24px;
+      // }
+      // @include desk {
+      //   padding: 63px 24px;
+      // }
       font-weight: 400;
       font-size: 14px;
       @media screen and (min-width: 370px) {
@@ -54,6 +66,7 @@
 
   @include tabl {
     --card-item: 2;
+    max-width: 354px;
   }
   @include desk {
     --card-item: 3;
@@ -62,6 +75,7 @@
 }
 
 .work-cards__box {
+  flex-grow: 1;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 24px 20px;

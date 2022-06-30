@@ -11,6 +11,7 @@
 
     @include tabl {
       --card-item: 2;
+      max-width: 354px;
     }
     @include desk {
       --card-item: 4;

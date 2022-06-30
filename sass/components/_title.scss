@@ -31,7 +31,17 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  // width: 100%;
   letter-spacing: 0.06em;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 306px;
+  }
+  // @include tabl {
+  //   max-width: 306px;
+  // }
+  // @include desk {
+  //   width: 100%;
+  // }
 
   &--ident {
     margin-top: 0;
