@@ -70,6 +70,7 @@
   }
   @include desk {
     --card-item: 3;
+    max-width: 370px;
   }
   background: var(--background-heder);
 }
